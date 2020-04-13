@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
-#define MaxSize 2 // 堆栈元素的最大个数
+#define MaxSize 3 // 堆栈元素的最大个数
 typedef struct SNode *Stack;
 struct SNode
 {
