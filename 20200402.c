@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <malloc.h>
 #define MAXSIZE 100      //栈的元素最大个数
-typedef int ElementType; //定义整型变量一个别名
 typedef struct Snode *Stack;
 struct Snode
 {
-    ElementType Data[MAXSIZE]; //存储栈的元素
+    int Data[MAXSIZE]; //存储栈的元素
     int Top;                   //栈顶元素下标
 };
 //初始化栈
@@ -27,7 +26,7 @@ int isEmpty(Stack S)
     return (S->Top == -1);
 }
 //入栈
-void Push(Stack S, ElementType X)
+void Push(Stack S, int X)
 {
     if (isFull(S))
     {
